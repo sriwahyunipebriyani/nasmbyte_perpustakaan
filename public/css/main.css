@@ -1,0 +1,175 @@
+body {
+    background: #f5f5f5;
+}
+
+.sidebar {
+    background: #696cff;
+
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 20px 10px;
+}
+
+.sidebar a:hover {
+    background: rgb(253, 251, 251);
+}
+
+.active {
+    background: whitesmoke;
+    box-shadow: 0 20px 27px 0 rgb(0, 0, 0, 0.05);
+    border-radius: 0.5rem;
+}
+
+.card-data {
+    /* border: solid 1px; */
+    background: white;
+    padding: 8px 8px 8px;
+    border-radius: 5px;
+}
+
+.card-data i {
+    font-size: 50px;
+    padding: 10px;
+}
+
+.card-dest {
+    font-size: 18px;
+}
+
+.card-column {
+    font-size: 13px;
+}
+
+div i {
+    color: #ffff;
+}
+
+.icon {
+    background: #696cff;
+    border-radius: 6px;
+}
+
+.galery {
+    background: white;
+    padding: 10px 10px 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.container {
+    background: white;
+    padding: 10px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.kepalakotak {
+    background: white;
+    padding: 10px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-bottom: 2px solid #696969;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+        /* Contoh penyesuaian padding untuk layar kecil */
+    }
+}
+
+.table2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 400px) {
+    .table2 {
+        padding: 10px;
+        /* Contoh penyesuaian padding untuk layar kecil */
+    }
+}
+
+.gly {
+    height: 100vh;
+    width: 100vh;
+    /* Untuk memastikan lebar gambar disesuaikan dengan aspek rasio */
+    display: block;
+    /* Menghilangkan margin tambahan yang mungkin timbul */
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .links {
+    display: flex;
+    gap: 10px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.footer .social-media a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .social-media a:hover {
+    color: #ff9800;
+}
+
+.kontener {
+    background: white;
+    padding: 10px 10px 10px;
+    border-radius: 13px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+.konek {
+    margin-top: 300px; /* Atur margin atas sesuai kebutuhan */
+    margin-bottom: 300px; /* Atur margin bawah sesuai kebutuhan */
+    /* Tambahan: Style lain yang mungkin Anda perlukan */
+    width: 100%;
+    height: 300px; /* Contoh tinggi elemen */
+}

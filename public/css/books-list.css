@@ -1,0 +1,208 @@
+body {
+    background: #f5f5f5;
+}
+nav {
+    background: white;
+    border: solid 1px #d3d3d3;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin: 0 10px 0 10px; /* Atur jarak antar menu */
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+.flex {
+    text-decoration: none;
+    color: black;
+    padding: 25;
+    padding-right: 40px;
+    padding-left: 10px; /* Menggeser teks ke sebelah kiri sebesar 10px */
+}
+.container {
+    background: white;
+    padding: 10px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+/* Atur footer untuk tetap berada di bagian bawah */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background: #f5f5f5;
+}
+a {
+    color: inherit; /* Warna utama (primary) */
+    text-decoration: none; /* Hilangkan dekorasi default */
+    position: relative; /* Atur posisi relatif */
+}
+
+a:hover {
+    color: #0056b3; /* Warna utama (primary) saat dihover */
+}
+/* a.active {
+    height: 2px;
+    background: 2px #007bff;
+} */
+
+a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px; /* Atur ketebalan garis bawah */
+    background-color: #007bff; /* Warna utama (primary) untuk garis bawah */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0); /* Mulai tanpa lebar */
+    transition: transform 0.3s ease; /* Efek transisi */
+}
+
+a:hover::after {
+    transform: scaleX(1); /* Perbesar lebar garis bawah saat dihover */
+}
+.kotak {
+    background: white;
+    padding: 5px 5px 5px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.08);
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 2px solid #696969;
+}
+/* Tautan dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Tampilan dropdown saat dihover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style untuk tautan dalam dropdown */
+.dropdown-content option {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Tampilan tautan dalam dropdown saat dihover */
+.dropdown-content option:hover {
+    background-color: #ddd;
+}
+
+/* CSS untuk kartu */
+.card {
+    position: relative;
+    width: 300px; /* Sesuaikan lebar kartu */
+    height: 200px; /* Sesuaikan tinggi kartu */
+    background-color: white;
+    border-radius: 4px;
+    transition: transform 0.3s ease; /* Transisi untuk efek animasi */
+}
+
+/* Efek animasi ketika kursor diarahkan */
+.card:hover {
+    transform: scale(1.05); /* Skala kartu saat kursor diarahkan */
+}
+.dropdownuser {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-contentuser {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-contentuser a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-contentuser a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdownuser:hover .dropdown-contentuser {
+    display: block;
+}
+
+.dropdownuser:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.alert {
+    position: fixed;
+    top: 100px; /* Sesuaikan posisi vertikal sesuai kebutuhan */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Pastikan alert muncul di atas elemen lain */
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Atur tinggi dan lebar alert sesuai kebutuhan */
+.alert {
+    max-width: 600px;
+    width: 100%;
+    padding: 1rem;
+}
+.rating {
+    display: flex;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-image: url("/image/ulasan.jpg");
+    background-size: cover;
+}
+
+.rating input:checked ~ label,
+.rating input:checked ~ label ~ label {
+    color: orange;
+    background-image: url("/image/ulasan.jpg");
+}
